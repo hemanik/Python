@@ -1,7 +1,44 @@
 # Python
 Python-Scripts Repo for Datafinder Project
 
+This repo has two data file attachments.
+
+Data dictionary : File containing headers/categories
+Notifications : Actual data, country wise, year wise for various categories. 
+
+Write a tool in Python that will process the above files and find "business intelligence".
+
+A sample run :
+
+./python datafinder.py --country/-cn <ISO2_COUNTRY_NAME> --dataset/-ds <DATA_SET_NAME> --category/-ct <VARIABLE_NAME> --year/-yr <YEAR> --datafile <DATAFILE>
+
+Mandatory CLI args:
+--country
+--dataset
+--category
+
+Optional
+--year
+
+Sample output
+
+Country : COUNTRY
+Year : YEAR
+Category : VALUE
+
+Or
+
+Country : COUNTRY
+YEAR 1: VALUE 1
+YEAR 2: VALUE 2
+YEAR 3: VALUE 3
+YEAR 4: VALUE 4
+.... and so on.
+
+If Year is not provided via CLI args, show values for all years for the given Category and Country.
+
 ************************************
+
 Test Case 1:
 
  python datafinder.py -cn AF -ds notification -ct new_sp -yr 1997
