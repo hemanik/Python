@@ -6,7 +6,7 @@ There are many websites that provide interesting information in CSV format. We w
 
 This repo has two data file attachments.
 
-Data dictionary : File containing headers/categories.
+Data dictionary : File containing headers/categories. 
 
 Notifications : Actual data, country wise, year wise for various categories. 
 
@@ -21,9 +21,7 @@ A sample run :
 Mandatory CLI args:
 
 --country
-
 --dataset
-
 --category
 
 Optional
