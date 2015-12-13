@@ -6,7 +6,7 @@ There are many websites that provide interesting information in CSV format. We w
 
 This repo has two data file attachments.
 
-Data dictionary : File containing headers/categories
+Data dictionary : File containing headers/categories__
 Notifications : Actual data, country wise, year wise for various categories. 
 
 Write a tool in Python that will process the above files and find "business intelligence".
