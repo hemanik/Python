@@ -7,7 +7,6 @@ There are many websites that provide interesting information in CSV format. We w
 This repo has two data file attachments.
 
 Data dictionary : File containing headers/categories
-
 Notifications : Actual data, country wise, year wise for various categories. 
 
 Write a tool in Python that will process the above files and find "business intelligence".
@@ -27,19 +26,20 @@ Optional
 --year
 
 Sample output
-
+``` Console
 Country : COUNTRY
 Year : YEAR
 Category : VALUE
-
+```
 Or
-
+``` Console
 Country : COUNTRY
 YEAR 1: VALUE 1
 YEAR 2: VALUE 2
 YEAR 3: VALUE 3
 YEAR 4: VALUE 4
 .... and so on.
+```
 
 If Year is not provided via CLI args, show values for all years for the given Category and Country.
 
@@ -50,11 +50,11 @@ Test Case 1:
  python datafinder.py -cn AF -ds notification -ct new_sp -yr 1997
 
 Output:
-
+``` Console
  COUNTRY: AF
  YEAR: 1997
  CATEGORY [ New pulmonary smear-positive cases (not used after 2012) ]: 618
-
+```
 ************************************
 
 Test Case 2:
@@ -62,7 +62,7 @@ Test Case 2:
  python datafinder.py -cn AF -ds notification -ct new_sp
 
 Output:
-
+``` Console
  COUNTRY: AF
  CATEGORY [ New pulmonary smear-positive cases (not used after 2012) ]
  1980 : DNP
@@ -100,4 +100,4 @@ Output:
  2012 : 13319
  2013 : DNP
  2014 : DNP
-
+```
