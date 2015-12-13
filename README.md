@@ -7,13 +7,16 @@ There are many websites that provide interesting information in CSV format. We w
 This repo has two data file attachments.
 
 Data dictionary : File containing headers/categories
+
 Notifications : Actual data, country wise, year wise for various categories. 
 
 Write a tool in Python that will process the above files and find "business intelligence".
 
 A sample run :
 
+``` Console
 ./python datafinder.py --country/-cn <ISO2_COUNTRY_NAME> --dataset/-ds <DATA_SET_NAME> --category/-ct <VARIABLE_NAME> --year/-yr <YEAR> --datafile <DATAFILE>
+```
 
 Mandatory CLI args:
 --country
