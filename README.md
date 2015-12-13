@@ -1,5 +1,8 @@
-# Python
+# WHO Data Finder
+
 Python-Scripts Repo for Datafinder Project
+
+There are many websites that provide interesting information in CSV format. We will be using the World Health Organization’s (WHO) website to download some information on Tuberculosis. You can go here to get it: http://www.who.int/tb/country/data/download/en/.
 
 This repo has two data file attachments.
 
@@ -9,6 +12,8 @@ Notifications : Actual data, country wise, year wise for various categories.
 Write a tool in Python that will process the above files and find "business intelligence".
 
 A sample run :
+
+.. code-block:: console
 
 ./python datafinder.py --country/-cn <ISO2_COUNTRY_NAME> --dataset/-ds <DATA_SET_NAME> --category/-ct <VARIABLE_NAME> --year/-yr <YEAR> --datafile <DATAFILE>
 
@@ -22,11 +27,15 @@ Optional
 
 Sample output
 
+.. code-block:: console
+
 Country : COUNTRY
 Year : YEAR
 Category : VALUE
 
 Or
+
+.. code-block:: console
 
 Country : COUNTRY
 YEAR 1: VALUE 1
@@ -41,9 +50,13 @@ If Year is not provided via CLI args, show values for all years for the given Ca
 
 Test Case 1:
 
+.. code-block:: console
+
  python datafinder.py -cn AF -ds notification -ct new_sp -yr 1997
 
 Output:
+
+.. code-block:: console
 
  COUNTRY: AF
  YEAR: 1997
@@ -53,9 +66,13 @@ Output:
 
 Test Case 2:
 
+.. code-block:: console
+
  python datafinder.py -cn AF -ds notification -ct new_sp
 
 Output:
+
+.. code-block:: console
 
  COUNTRY: AF
  CATEGORY [ New pulmonary smear-positive cases (not used after 2012) ]
